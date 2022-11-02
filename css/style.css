@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #737373;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.wrap {
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.menu li {
+    margin-left: 94px;
+}
+
+.menu li a {
+    color: #252B42;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #FA4A0C;
+
+}
+
+.download__wrap {
+    background: url(../img/bg-app.png) center center no-repeat;
+    background-size: cover;
+    padding: 75px 0 145px 0;
+}
+
+.download {
+    color: #fff;
+    text-align: center;
+}
+
+.download__txt {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.download__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-bottom: 30px;
+}
+
+.download__subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 60px;
+
+}
+
+.btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 16px 60px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.btn--oreng {
+    border-color: #FA4A0C;
+    background-color: #FA4A0C;
+}
+
+.workapp__wrap {
+    padding: 50px 0;
+}
+
+.parttitle {
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.workapp--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.workapp__img {
+    width: 47%;
+}
+
+.workapp__txt {
+    width: 50%;
+}
+
+.workapp__txt h3 {
+    color: #FA4A0C;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.workapp__txt h2 {
+    color: #252B42;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.workapp__txt h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+}
+
+.workapp--item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.workapp--item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__wrap {
+    padding: 70px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+@media (max-width:800px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .menu li {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .download__txt {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .download__title {
+        font-size: 2rem;
+        line-height: 3, 5rem;
+
+    }
+
+    .download__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .download__wrap {
+        padding: 40px 0 70px 0;
+    }
+
+    .porttitle {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .workapp--item {
+        flex-direction: column-reverse;
+    }
+
+    .workapp__img {
+        text-align: center;
+    }
+
+    .workapp--item:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .workapp__txt,
+    .workapp__img {
+        width: 100%;
+    }
+
+    .workapp__txt {
+        margin-bottom: 40px;
+    }
+
+    .workapp__txt h3 {
+        font-size: 1.2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .workapp__txt h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+
+}
+
+@media (max-width:600px) {
+    .btn {
+        
+        display: block;
+        margin: 30px auto;
+        width: 290px;
+        box-sizing: border-box;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .foore img {
+        margin-bottom: 30px;
+    }
+    .footer__wrap{
+        padding: 30px;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+    .menu li{
+        margin: 10px 15px;
+    } 
+}
